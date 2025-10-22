@@ -21,10 +21,9 @@ html {
 }
 .content{
   display: grid;
+  align-items: end;
   grid-template-columns: 711px 399px;
   gap: 30px;
-  place-content: space-around center;
-  align-items: end;
   height: 534px;
   width: 1140px;
 }
@@ -34,28 +33,58 @@ html {
 .result__video{
   width: 100%;
   height: 100%;
+  padding-bottom: 16px;
 }
 .result__video-container{
   width: 711px;
   height: 456px;
-  gap: 16px;
 }
 .search-form{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 225px 212px 194px;
+  gap: 40px;
 }
 .content__list{
  height: 298px;
  overflow-y: scroll;
  gap: 30px;
+ padding-top: 26px;
 }
 .content__video-card {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
 }
 .content__video-card-thumbnail{
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+.content__video-card-description{
+  flex-grow: 1; 
+  width: 196px;
+}
+.content__video-card-description-container{
+  width: 196px;
+}
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+}
+.title {
+  color: #FFF;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 70.5px;
+  text-transform: uppercase;
+}
+.content__accent {
+  color: #545050;
+}
+.content__card-link {
+  text-decoration: none;
+  color:#FFF;
 }
 h1,
 h2,
@@ -88,46 +117,39 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
-/*
-.content__details{
- height: 534px;
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.search-form{
+.content__video-card-description {
+  font-weight: 400;
+  line-height: 16.2px;
+  size: 18px;
+  line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+.search-form__fieldset {
   display: flex;
+  border: none;
 }
-.result{
-  width: 711px;
-  height: 456px;
-  gap: 16px;
+.button{
 }
-.content__accent{
-
+.search-form__checkbox-list{
+  display: flex;
+  gap: 15px;
 }
-.content__list-container{
-
-}
-.content__list{
-
-}
-.content__list-item{
-
-}
-.content__card-link{
-
-}
-.content__video-card{
-
-}
-.content__video-card-description-container{
-
-}
-.content__video-card-title{
-
-}
-.content__video-card-description{
-
-}
-.content__video-card-thumbnail{
-
-}
-*/
